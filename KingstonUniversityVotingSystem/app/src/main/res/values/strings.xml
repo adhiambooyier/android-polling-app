@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Kingston University Voting System</string>
+    <string name="preferences_filename">com.cognition.app.kingstonuniversityvotingsystem.PREFERENCES_FILE</string>
+</resources>

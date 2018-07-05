@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorKingston"
+    android:padding="16dp"
+    tools:context="com.cognition.app.kingstonuniversityvotingsystem.CreatePollActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/headerCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:text="username"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_menu_black_24dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="Voting Topic"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/headerCard" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/prompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Type your answers:"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/topic" />
+
+            <LinearLayout
+                android:id="@+id/answers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/moreAnswers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add More Answers"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/ans4" />
+
+            <LinearLayout
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/moreAnswers">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtPollLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Poll Time Length"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/datePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" DD/MM/YYYY"
+                    android:inputType="date"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/createPoll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="create poll"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/date" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

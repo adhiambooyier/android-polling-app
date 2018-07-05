@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/logout"
+    android:title="Logout"/>
+
+    <item android:id="@+id/createPoll"
+        android:title="New Poll"/>
+
+    <item android:id="@+id/createforum"
+        android:title="New Question"/>
+
+    <item android:id="@+id/browsePolls"
+        android:title="Browse Polls"/>
+
+    <item android:id="@+id/browseForum"
+        android:title="Browse Forum"/>
+
+    <item android:id="@+id/myPolls"
+        android:title="My Polls"/>
+</menu>
